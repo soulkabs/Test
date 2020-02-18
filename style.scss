@@ -1,0 +1,49 @@
+body {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.block{
+	position: relative;
+	color: white;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+}
+.gradient::after {
+	background: linear-gradient(to top,rgba(34, 34, 34, 0.85) 30.64%,rgba(38, 38, 38, 0) 81.78%);
+	content: "";
+	display: block;
+	position: absolute;
+	height: 100%;
+	left: 0;
+    top: -4px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.text {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.block__text {
+	position: absolute;
+	bottom: 0px;
+	left: 16px;
+	right: 24px;
+}
+
+.text_fontSize_16 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.text_fontSize_12 {
+	font-size: 12px;
+	line-height: 18px;
+}
